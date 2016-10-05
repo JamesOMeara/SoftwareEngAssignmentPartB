@@ -25,4 +25,25 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.5.1</version>
+        <executions>
+            <execution>
+             <id>copy-dependencies</id>
+             <phase>package</phase>
+             <goals>
+              <goal>copy-dependencies</goal>
+             </goals>
+             <configuration>
+              <!-- exclude junit, we need runtime dependency only -->
+              <includeScope>runtime</includeScope>
+              <!-- custom output directory -->
+              <outputDirectory>${project.build.directory}/jarDir/lib/</outputDirectory> 
+            </configuration> 
+          </execution> 
+       </executions> 
+   </plugin>
+    
 </project>
