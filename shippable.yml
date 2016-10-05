@@ -2,7 +2,9 @@ language: java
 
 jdk: oraclejdk8
 
-script: mvn install -DskipTests=true
+
+after_success:
+   - mvn test
 
 
 notifications:
