@@ -1,11 +1,6 @@
 language: java
-
-jdk:
-   - openjdk7
-
-after_success:
-   - mvn clean
-   
+sudo: false
+script: mvn clean verify
 
 notifications:
   email:
