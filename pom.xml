@@ -8,19 +8,17 @@
     
     <repositories>
         <repository>
-        <id> moshhasa</id>
-         <name>maven-test-repo</name>
-          <url>https://github.com/JamesOMeara/SoftwareEngAssignmentPartA/</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>     
  
      <dependencies>
          <dependency>
-            <groupId>com.mycompany</groupId>
-             <artifactId>soft_eng_assignment_part_a</artifactId>
-             <version>1.0-SNAPSHOT</version>
-             <scope>compile</scope>
-          </dependency>
+            <groupId>com.github.JamesOMeara</groupId>
+	    <artifactId>SoftwareEngAssignmentPartA</artifactId>
+	    <version>-SNAPSHOT</version>
+         </dependency>
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
