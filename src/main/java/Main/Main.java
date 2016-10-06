@@ -30,10 +30,10 @@ public class Main {
             studs.add(stud);
         }
         
-        for (Student s: studs){
-            System.out.println(s.getName() + " " + s.getAge() + " " + s.getDob() );
-            System.out.println(s);
-        }
+//        for (Student s: studs){
+//            System.out.println(s.getName() + " " + s.getAge() + " " + s.getDob() );
+//            System.out.println(s);
+//        }
         
         
         //create modules
@@ -52,6 +52,9 @@ public class Main {
         //create Programme
         Programme BCT4 = new Programme("4th Year Computer Science", new DateTime(), new DateTime());
         BCT4.setModules(mods);
+        
+        
+        System.out.println(BCT4);
     }
     
   
