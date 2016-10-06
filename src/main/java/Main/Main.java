@@ -32,6 +32,7 @@ public class Main {
         
         for (Student s: studs){
             System.out.println(s.getName() + " " + s.getAge() + " " + s.getDob() );
+            System.out.println(s);
         }
         
         
